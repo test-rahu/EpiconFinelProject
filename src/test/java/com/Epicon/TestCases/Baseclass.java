@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -24,13 +26,12 @@ String URL=read.getBaseURL();
 String uname=read.getUserName();
 String pass=read.getPass();
 String Browser=read.getBrowserL();
+public static Logger logger =LogManager.getLogger("EpiconFinel");
 
 	@BeforeClass
-	public void Setup() {
+	public void Setup() {	
 		
-		String path="C:\\Users\\Rahul\\eclipse-workspace\\Epicon\\Configuration\\config.properties";
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rahul\\Desktop\\ChromeDriver\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rahul\\eclipse-workspace\\EpiconFinal\\drivers\\chromedriver.exe");
 		
 		switch(Browser.toLowerCase()) {
 		

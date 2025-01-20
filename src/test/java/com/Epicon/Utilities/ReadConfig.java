@@ -7,7 +7,7 @@ import java.util.Properties;
 public class ReadConfig {
 	
 	Properties propertis;
-	String path="C:\\Users\\Rahul\\eclipse-workspace\\EpiconFinel\\Configuration\\config.properties";
+	String path="C:\\Users\\Rahul\\eclipse-workspace\\EpiconFinal\\Configuration\\config.properties";
 	
 	public ReadConfig() {
 	

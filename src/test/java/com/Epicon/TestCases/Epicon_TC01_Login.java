@@ -23,7 +23,7 @@ public class Epicon_TC01_Login extends Baseclass {
 		
 		indexPage indexpage=new indexPage(driver);
 		indexpage.closePopup();
-		
+		logger.info("close popup");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		
 		loginWithRegisterPage loginpage=new loginWithRegisterPage(driver);
@@ -35,6 +35,7 @@ public class Epicon_TC01_Login extends Baseclass {
 		continueToLogin login=new continueToLogin(driver);
 		login.EnterLogin(uname);
 		login.EnterPass(pass);
+		logger.info("entered username and pass");
 		login.ClickOnLoginButton();
 		HomePage homepage=new HomePage(driver);
 		String actual=homepage.getHometext();
@@ -51,10 +52,7 @@ public class Epicon_TC01_Login extends Baseclass {
 			
 		}
 		
-		
-	
-		
-	
+		logger.info("Test 01 pass");
 	
 	
 	}

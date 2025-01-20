@@ -6,8 +6,8 @@
       <class name="com.Epicon.TestCases.Epicon_TC01_Login">
         <methods>
           <include name="Setup"/>
-          <include name="login"/>
           <include name="TearDown"/>
+          <include name="login"/>
         </methods>
       </class> <!-- com.Epicon.TestCases.Epicon_TC01_Login -->
     </classes>
