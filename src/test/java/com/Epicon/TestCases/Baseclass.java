@@ -67,6 +67,8 @@ public static Logger logger =LogManager.getLogger("EpiconFinel");
 	}
 	
 	
+	
+	
 	public void captureScreenShot(WebDriver driver, String testName) throws IOException {
 		//convert webdriver object to Takesscreenshot interface
 		TakesScreenshot screenshot=(TakesScreenshot)driver;
