@@ -22,8 +22,8 @@ public class Epicon_TC01_Login extends Baseclass {
 	public void login() throws IOException, Exception   {
 		
 		indexPage indexpage=new indexPage(driver);
-		indexpage.closePopup();
-		logger.info("close popup");
+		//indexpage.closePopup();			Skip this as there is not popup is available SSSSS
+		//logger.info("close popup");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		
 		loginWithRegisterPage loginpage=new loginWithRegisterPage(driver);

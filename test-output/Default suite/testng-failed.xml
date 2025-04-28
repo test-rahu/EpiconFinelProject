@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Epicon.PageObject.LoginEpic">
+      <class name="com.Epicon.TestCases.Epicon_TC01_Login">
         <methods>
-          <include name="test"/>
+          <include name="Setup"/>
+          <include name="TearDown"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.Epicon.PageObject.LoginEpic -->
+      </class> <!-- com.Epicon.TestCases.Epicon_TC01_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

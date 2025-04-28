@@ -31,7 +31,7 @@ public static Logger logger =LogManager.getLogger("EpiconFinel");
 	@BeforeClass
 	public void Setup() {	
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rahul\\eclipse-workspace\\EpiconFinal\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rahul\\eclipse-workspace\\EpiconFinal\\drivers\\chromedriver.exe");
 		
 		switch(Browser.toLowerCase()) {
 		

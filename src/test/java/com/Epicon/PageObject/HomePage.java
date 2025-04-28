@@ -14,7 +14,7 @@ WebDriver ldriver;
 		PageFactory.initElements(rdriver, this );	
 	}
 
-	@FindBy(xpath="//a[contains(text(),'Home')]")
+	@FindBy(xpath="(//a[@data-element_text='Home'])[3]")
 	WebElement Homepage;
 	
 	public String getHometext() {

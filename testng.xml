@@ -10,6 +10,5 @@
       <class name="com.Epicon.TestCases.Epicon_TC01_Login"/>
     </classes>
   </test> <!-- Test -->
-  
 
 </suite> <!-- Suite -->
